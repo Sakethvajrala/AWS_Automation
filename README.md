@@ -13,8 +13,16 @@ This project automates AWS tasks, including S3 file uploads, configuration manag
 
 ###  Project Structure
 
-awsAutomation/
-│
-├── config/       # Stores configuration files for AWS services
-├── logs/         # Application logs for monitoring and debugging
-└── src/          # Core automation scripts and utilities
+AWS_Automation/
+├── README.md
+├── config/            # Stores configuration files for AWS services
+├── logs/            # Application logs for monitoring and debugging
+├── src/            # Core automation scripts and utilities
+
+### Prerequisites
+1. Python 3.8+
+2. AWS CLI installed and configured
+3. An AWS account with access to required services
+
+### How to Run
+- Run Automation.py and adjust config.yml based on needs. Place files you want to upload in CRWD and rest is taken care of. 
