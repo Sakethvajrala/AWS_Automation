@@ -1,8 +1,4 @@
-bucket_name: store-data-747143892092 # Change to the bucket name you want to upload to
-root_path: /Users/saketh/Desktop/Algorized/Arryn_ML_Pipeline # Change to the pwd your running this in
+bucket_name:  # Change to the bucket name you want to upload to
+root_path:  # Change to the pwd your running this in
 folder_starting_word: patagonia_ # This could change, so make sure to change this based on the files given
-bounding_box_bucket_name: alg-ml-gimli-bounding-box-dev
-radar_data_bucket_name: alg-ml-gimli-raw-radar-dev
 thread_pool_size: 8
-bounding_box_folder_name: boundingbox # This value is here because when sorting through radar and boundingbox data, they are sorted in two different folders within the data given
-radar_data_folder_name: RADAR1
