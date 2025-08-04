@@ -12,13 +12,13 @@ This project automates AWS tasks, including S3 file uploads, configuration manag
 
 
 ###  Project Structure
-
+```
 AWS_Automation/
 ├── README.md
 ├── config/            # Stores configuration files for AWS services
 ├── logs/            # Application logs for monitoring and debugging
 ├── src/            # Core automation scripts and utilities
-
+```
 ### Prerequisites
 1. Python 3.8+
 2. AWS CLI installed and configured
