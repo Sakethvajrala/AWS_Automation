@@ -23,7 +23,7 @@ def upload_files_to_s3_bucket(file_path, bucket_name, s3_key):
         S3_CLIENT.head_object(Bucket=bucket_name, Key=s3_key)
     except botocore.exceptions.ClientError as e:
         error_code = e.response['Error']['Code']
-        if error_code == '404': # 404 basically means it doesn't alreadye exist in the bucket already
+        if error_code == '404': 
             try:
                 S3_CLIENT.upload_file(file_path, bucket_name, s3_key)
             except botocore.exceptions.ClientError as upload_error:
@@ -36,11 +36,7 @@ def get_npy_files():
     start_time = time.time()
     files_to_be_uploaded = []
     root_path = config.get('root_path')
-    bounding_box_folder_name = config.get('bounding_box_folder_name')
-    radar_data_folder_name = config.get('radar_data_folder_name')
     bucket_name = config.get('bucket_name')
-    bounding_box_bucket_name = config.get('bounding_box_bucket_name')
-    radar_data_bucket_name = config.get('radar_data_bucket_name')
 
     for patagonia_path in get_root_paths():
         directory = os.path.basename(patagonia_path)
