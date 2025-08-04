@@ -1,7 +1,7 @@
 # AWS_Automation
 This project automates AWS tasks, including S3 file uploads, configuration management, and logging. It is designed to simplify workflows by providing an easy way to manage AWS resources programmatically.
 
-Features
+### Features
 - Automated file uploads to AWS S3
 
 - Configuration-based bucket and folder paths
@@ -11,10 +11,8 @@ Features
 - Extendable structure for adding more AWS automation tasks
 
 
-Project Structure
-bash
-Copy
-Edit
+###  Project Structure
+
 awsAutomation/
 │
 ├── config/       # Stores configuration files for AWS services
